@@ -1,0 +1,41 @@
+::selection {
+	background: #2f65ff;
+	color: #fff;
+}
+::-moz-selection {
+	background: #2f65ff;
+	color: #fff;
+}
+body {
+	background: rgb(0,176,112); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(0,176,112,1) 0%, rgba(0,141,90,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(0,176,112,1) 0%,rgba(0,141,90,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(0,176,112,1) 0%,rgba(0,141,90,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b070', endColorstr='#008d5a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.u-i-w span.material-icons-two-tone {
+    filter: invert(43%) sepia(82%) saturate(2333%) hue-rotate(132deg) brightness(94%) contrast(107%);
+}
+.s-o, .p-b, .s-f-p-t-u-w, .s-f-p-t-p-w, .p-lb div, .c-w-p-g-i-i-c-w {
+	background: #00b070;
+}
+.p-s-i.active {
+	background: #00b070;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #00b070;
+}
+.r-i-s-r-h-w span {
+	background: #00b070;
+}
+.r-s-i:hover  {
+	border: 2px solid #00b070;
+}
+.r-s-i.active {
+	border: 2px solid #00b070;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 5px #00b070;
+}
+.prlp {
+	background: #00b070;
+}
+.prlw {
+	background: #00b070;
+}

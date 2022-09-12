@@ -1,0 +1,41 @@
+::selection {
+	background: #2f65ff;
+	color: #fff;
+}
+::-moz-selection {
+	background: #2f65ff;
+	color: #fff;
+}
+body {
+	background: rgb(124,50,247); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(124,50,247,1) 0%, rgba(79,8,195,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(124,50,247,1) 0%,rgba(79,8,195,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(124,50,247,1) 0%,rgba(79,8,195,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c32f7', endColorstr='#4f08c3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.u-i-w span.material-icons-two-tone {
+	filter: invert(22%) sepia(99%) saturate(4863%) hue-rotate(260deg) brightness(99%) contrast(95%);
+}
+.s-o, .p-b, .s-f-p-t-u-w, .s-f-p-t-p-w, .p-lb div, .c-w-p-g-i-i-c-w {
+	background: #7c32f7;
+}
+.p-s-i.active {
+	background: #7c32f7;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #7c32f7;
+}
+.r-i-s-r-h-w span {
+	background: #7c32f7;
+}
+.r-s-i:hover  {
+	border: 2px solid #7c32f7;
+}
+.r-s-i.active {
+	border: 2px solid #7c32f7;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 5px #7c32f7;
+}
+.prlp {
+	background: #7c32f7;
+}
+.prlw {
+	background: #7c32f7;
+}

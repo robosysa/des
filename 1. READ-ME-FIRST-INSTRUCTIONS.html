@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>GenRocket – CPA Marketing Landing Page | Marketing-Rhino.com</title>
+		<meta name="robots" content="noindex">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Documentation for setting up the GenRocket – CPA Marketing Landing Page downloaded from Marketing-Rhino.com" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="icon" type="image/ico" href="https://www.marketing-rhino.com/wp-content/themes/endurance/favicon.ico" />
+		<link rel="icon" type="image/png" href="https://www.marketing-rhino.com/wp-content/themes/endurance/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="https://www.marketing-rhino.com/wp-content/themes/endurance/favicon-16x16.png" sizes="16x16" />	
+		<!-- CSS -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone|" rel="stylesheet">
+		<style>
+			body {
+				font-family: 'Inter', sans-serif;
+				font-size: 16px;	
+				background: #f1f5f9;
+				overflow-x: hidden;
+			}
+			strong {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 700;
+				color: #64748b;
+			}
+			a {
+				transition: all .2s ease-out;
+				-moz-transition: all .2s ease-out;
+				-webkit-transition: all .2s ease-out;
+				color: #8da2fb;
+			}
+			a:hover {
+				color: #8da2fb;
+			}
+			h1, h2, h3, h4 ,h5 {
+				font-weight: 700;
+				color: #27303f;
+				font-family: 'Montserrat', sans-serif;
+			}
+			h2 {
+				margin-bottom: 25px;
+			}
+			pre {
+				background-color: rgba(0, 0, 0, 0.2);
+				border: 1px solid rgba(255, 255, 255, 0.1);
+				border-radius: 4px;
+				color: #fff;
+				display: block;
+				font-size: 12px;
+				line-height: 1.42857;
+				margin: 0 0 10px;
+				overflow-wrap: break-word;
+				padding: 20px 20px;
+				word-break: break-all;
+			}
+			.nav-wrapper {
+				background-color: #1a202e;
+				width: 20%;
+				height: 100%;
+				position: fixed;
+				left:0;
+				top:0;
+				padding: 80px 0 0 0;
+				-webkit-box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.8);
+				-moz-box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.8);
+				box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.8);
+			}
+			.nav {
+				margin-bottom: 40px;
+			}
+			.nav-p {
+				padding: 0 30px;
+			}
+			.nav-wrapper img {
+				max-width: 250px;
+				margin: 0 auto 40px auto;
+				position: relative;
+			}
+			.nav-wrapper h4 {
+				color: #8da2fb;
+				text-transform: uppercase;
+				margin-bottom: 0;
+				font-size: 0.9em;
+				padding-bottom: 15px;
+				position: relative;
+			}
+			.nav-wrapper h4:after {
+				content: '';
+				position: absolute;
+				height: 2px;
+				width: 30px;
+				right: 0;
+				bottom: 0;
+				background: #8da2fb;
+			}
+			.nav {
+				margin-top: 15px;
+			}
+			.nav > li:hover, .nav > li > a:hover {
+				background: #131822;
+			}
+			.nav > li {
+				padding: 15px 30px;
+			}
+			.nav > li > a {
+				color: #c4d8e3;
+				font-size: 0.85em;
+				font-weight: 400;
+				padding: 0;
+			}
+			.nav-wrapper a:hover, .nav>li>a:focus, .nav>li>a:hover {
+				color: #8da2fb;
+				background: none;
+				background-color: none !important;
+				border: none !important;
+			}			
+			.content-wrapper {
+				width: 74%;
+				left: 26%;
+				position: relative;
+				padding: 80px 150px 30px 0;
+				color: #64748b;
+			}
+			.intro-wrapp {
+				text-align: center;
+			}
+			.intro-wrapp img {
+				margin: 0 auto;
+			}
+			.intro-wrapp span a {
+				font-weight: 300;
+				font-size: 0.9em;
+				color: #8da2fb;
+			}
+			.intro-wrapp p.thank-you {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 2em;
+				font-weight: 700;
+				margin: 30px 0;
+				color: #27303f;
+			}
+			.intro-wrapp p.intro-notice {
+				font-size: 1.4em;
+				color: #64748b;
+				font-weight: 300;
+				width: 70%;
+				margin: 0 auto;
+			}
+			.images-download-link {
+				font-size: 1.5em;
+				font-family: 'Montserrat', sans-serif;
+				color: #fc4349;
+				margin: 20px 0;
+				display: block;				
+			}
+			.images-download-link:hover {
+				color: #8da2fb;
+			}			
+			.margin-img {
+				margin: 10px 0;
+			}
+			ol li {
+				margin: 5px 0;
+			}
+			hr {
+				border-color: rgba(0, 0, 0, 0.15);
+				border-width: 2px 0 0;
+				margin: 50px 0;
+			}
+			img.contact-info-img {
+				margin-bottom: 10px;
+			}
+			img.skype-contact-info-img {
+				margin-top: 15px;
+			}
+			.skype-chat-now-wrapper {
+				position: relative;
+				width: 250px;
+				height: 55px;
+				border: 2px solid #eee;
+				border-radius: 40px;
+				float: right;
+				text-align: center;
+				top: 15px;
+			}
+			.skype-chat-now-wrapper div {
+				position: relative;
+				text-align: center;
+				left: -40px;
+				top: 12px;
+			}
+			.skype-chat-now-wrapper div img {
+				margin: 0 auto !important;
+				float: none;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			.chat-with-us-wrapper {
+				margin-top: 30px;
+			}
+			.mr-doc-button-wrapper {
+				position: relative;
+				margin: 15px auto;
+			}
+			.mr-doc-button {
+				background: #5850ec;
+				color: #f0f5ff;
+				padding: 16px 16px;
+				line-height: 1;
+				box-shadow: 0 0 0 0 rgba(0,0,0,.2), 0 0 0 0 rgba(0,0,0,.14), 0 0 0 0 rgba(0,0,0,.12);
+				border: none;
+				border-radius: 10px;
+				display: table;
+				-webkit-transition: all 0.2s ease-in-out 0s;
+				-moz-transition: all 0.2s ease-in-out 0s;
+				-ms-transition: all 0.2s ease-in-out 0s;
+				-o-transition: all 0.2s ease-in-out 0s;
+				transition: all 0.2s ease-in-out 0s;
+			}
+			.mr-doc-button:hover {
+				background: #4f48d4;
+				color: #f0f5ff;
+			}
+			.mr-doc-button:active, .mr-doc-button:visited, .mr-doc-button:focus {
+				color: #f0f5ff;
+			}
+			.instructions-list {
+				margin: 0;
+				padding-left: 20px;
+			}
+			.instructions-list {
+				list-style: none;
+				counter-reset: li;
+			}
+			.instructions-list li::before {
+				content: '•';
+				color: #8da2fb;
+				display: inline-block;
+				width: 1em;
+				margin-left: -1.5em;
+				margin-right: 0.5em;
+				text-align: right;
+				direction: rtl;
+			}
+			.instructions-list li:last-child {
+				margin-bottom: 0;
+			}
+			.margin-top-m {
+				margin-top: 15px;
+			}
+			.documentation-note {
+				padding: 15px;
+				background: #fbfdfe;
+				border: 1px solid #e2e8f0;
+				border-radius: 7px;
+			}
+			.highlighted-col {
+				padding: 15px 30px;
+				background: #fbfdfe;
+				border: 1px solid #e2e8f0;
+				border-radius: 7px;
+			}
+			.highlighted-col h5 {
+				margin: 0 0 10px 0;
+				font-size: 1em;
+				font-family: 'Inter', sans-serif;
+				color: #8da2fb;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+			}
+			.hc-r {
+				margin-bottom: 10px;
+			}
+			.hc-r:last-child {
+				margin-bottom: 0;
+			}
+			.hc-r-t {
+				font-weight: 700;
+			}
+			.hc-r-e {
+				font-size: 0.9em;
+				color: #b5bdcc;
+			}
+			.nav-wrapper-header-content {
+				position: relative;
+				text-align: center;
+				margin: 10px auto 0 auto;
+			}
+			.nav-wrapper-header-content h1 {
+				font-size: 1.6em;
+				color: #fff;
+			}
+			.nav-wrapper-header-content h2 {
+				font-size: 0.9em;
+				font-weight: 400;
+				letter-spacing: .05em;
+				color: #97a6ba;
+			}
+			.nav-wrapper-group {
+				margin-top: 24px;
+			}
+			.nav-wrapper-group:first-child {
+				margin-top: 0;
+			}
+			.nav-wrapper-section-title-wrapper {
+				position: relative;
+				padding: 12px 24px;
+			}
+			.nav-wrapper-section-title {
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: .05em;
+				text-transform: uppercase;
+				color: #8da2fb;
+			}
+			.nav-wrapper-section-subtitle {
+				font-size: 11px;
+				line-height: 1.5;
+				color: #64748b;
+			}
+			.nav-wrapper ul {
+				margin: 0;
+				padding: 0;
+				position: relative;
+				list-style-type: none;
+			}
+			.nav-wrapper ul li {
+				position: relative;
+			}
+			.nav-wrapper ul li .nav-link {
+				color: #c4d8e3;
+				padding: 12px 24px;
+				display: flex;
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 1;
+				align-items: center;
+			}
+			.nav-wrapper ul li .nav-link:hover {
+				color: #fff;
+				background: #131822;
+			}
+			.nav-wrapper ul li .nav-link i.material-icons-two-tone {
+				margin-right: 16px;
+				filter: invert(46%) sepia(16%) saturate(614%) hue-rotate(176deg) brightness(91%) contrast(85%);
+				font-size: 28px;
+			}
+			.nav-wrapper ul li .nav-link i.fab {
+				margin-right: 16px;
+				color: #64748b;
+				font-size: 28px;
+			}
+			.nav-wrapper ul li.active .nav-link {
+				color: #fff;
+				background: #131822;
+			}
+			.nav-wrapper ul li .nav-link span {
+				display: block;
+				font-size: 11px;
+				line-height: 1.5;
+				color: #64748b;
+				font-weight: 600;
+			}
+			@media screen and (max-width: 1400px) {
+				.nav-wrapper {
+					padding-top: 40px;
+				}
+				.nav-wrapper img {
+					max-width: 200px;
+					margin-bottom: 20px;
+				}
+				.nav > li > a {
+					padding: 10px 0;
+				}
+				.nav > li > a {
+					font-size: 0.75em;
+				}				
+				.nav-wrapper img {
+					max-width: 200px;
+				}
+				.chat-with-us-wrapper {
+					margin-top: 0;
+				}
+				.skype-chat-now-wrapper {
+					width: 200px;
+					height: 50px;
+				}
+				.skype-chat-now-wrapper div img {
+					top: -4px;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>		
+		<!-- Content -->		
+			<div class="row">
+			<div class="nav-wrapper">
+				<div class="nav-p">
+					<a href="https://www.marketing-rhino.com" target="_blank" rel="nofollow"><img class="img-responsive" src="https://www.marketing-rhino.com/wp-content/uploads/2018/03/marketing-rhino-logo-2018-white-small.png"></a>
+				</div>	
+				<div class="nav-wrapper-group">
+					<div class="nav-wrapper-section-title-wrapper">
+						<div class="nav-wrapper-section-title">Navigation</div>
+						<div class="nav-wrapper-section-subtitle">Select a category below.</div>
+					</div>
+					<ul>
+						<li class="nav-item">
+							<a class="nav-link scroll-me" href="#r-1">How to activate your license key</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll-me" href="#r-2">Uploading files</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll-me" href="#r-2-1">Updating files</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll-me" href="#r-3">Accessing the admin panel</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll-me" href="#r-4">First Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll-me" href="#r-7">How to get support</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav-wrapper-group">
+					<div class="nav-wrapper-section-title-wrapper">
+						<div class="nav-wrapper-section-title">Support</div>
+						<div class="nav-wrapper-section-subtitle">Get in touch with us to receive support.</div>
+					</div>
+					<ul>
+						<li class="nav-item">
+							<div class="nav-link"><i class="fab fa-skype"></i><div><span>Skype Username:</span> counter.mind</div></div>
+						</li>
+						<li class="nav-item">
+							<div class="nav-link"><i class="material-icons-two-tone">alternate_email</i><div><span>Email:</span> info@marketing-rhino.com</div></div>
+						</li>
+					</ul>						
+				</div>
+			</div>
+			<div class="content-wrapper">
+				<div class="row first-row">
+					<div class="col col-sm-12 intro-wrapp">
+						<a href="https://www.marketing-rhino.com" target="_blank"><img class="img-responsive" src="https://www.marketing-rhino.com/wp-content/uploads/2018/03/marketing-rhino-header-logo.png"></a>
+						<span><a href="https://www.marketing-rhino.com" target="_blank" rel="nofollow">www.marketing-rhino.com</a></span>
+						<p class="thank-you">							
+							Thank you for purchasing
+							<br>
+							GenRocket – CPA Marketing Landing Page !
+							<p class="intro-notice">Please read this file thoroughly as you can find instructions on how to setup the landing page, connect your license key and get more support via our channels.</p>
+						</p>
+					</div>
+				</div>				
+				<hr>
+				<div id="r-1" class="row">
+					<div class="col-sm-12">
+						<h2>How to Activate your License Key</h2>						
+						<p>You can manage your license keys by logging in to your <a href="https://www.marketing-rhino.com/customer-profile/" target="_blank">customer profile</a> on our website.</p>
+						<p><strong>IMPORTANT:</strong> Your log-in password and username details were sent to the enetered email address, after your first purchase. You can find your license key in the Purchase Confirmation email, which was sent after completed purchase.</p>
+						<div class="mr-doc-button-wrapper">
+							<a class="mr-doc-button"href="https://www.marketing-rhino.com/customer-profile/" target="_blank" rel="nofollow">» Click here to Log-In Now «</a>
+						</div>
+						<div class="row">
+							<div class="col-sm-5">
+								<img class="img-responsive" src="https://www.marketing-rhino.com/wp-content/uploads/2020/09/marketing-rhino-license-key-activation-instructions-min.png">
+							</div>
+							<div class="col-sm-7">
+								<strong>Instructions:</strong>
+								<ol class="instructions-list">
+									<li>Log in to your <a href="https://www.marketing-rhino.com/customer-profile/" target="_blank">customer profile</a></li>
+									<li>Enter your domain name and license key in appropriate input fields.</li>
+									<li>Make sure to only use lower-case characters!</li>
+									<li>Click on <strong>Activate</strong> button to add the domain name, or <strong>Deactivate</strong> button to remove it.</li>
+									<li>Your entered License Key and Domain should now display inside License Overview panel.</li>
+									<li>After your license key is connected to your domain, you will need to enter it inside the "Home" panel of the admin dashboard.</li>
+								</ol>								
+							</div>
+						</div>
+						<p class="margin-top-m documentation-note"><strong>Note:</strong> It is important to connect your domain with a license key as the landing page will function properly only on connected domains.</p>							
+					</div>					
+				</div>	
+				<hr>
+				<div id="r-2" class="row">
+					<div class="col-sm-12">
+						<h2>Uploading files</h2>						
+						<p>After downloading the .zip archive file which contains your purchased landing page files, you will need to upload them to your hosting server. To do so, you will need to transfer all the files from downloaded .zip archive file, inside the root directory of your hosting server which is located inside <strong>www</strong> or <strong>public_html</strong> folder (both are the same folder).</p>
+						<p>You can read more about uploading the files to your server on <a href="https://www.marketing-rhino.com/articles/how-to-upload-files-i-received/" target="_blank" rel="nofollow">this url</a>.
+					</div>					
+				</div>
+				<hr>
+				<div id="r-2-1" class="row">
+					<div class="col-sm-12">
+						<h2>Updating files to a newer version</h2>						
+						<p>In order to update the landing page to a newer release version, you need to extract all the files from downloaded .zip archive of a newer relase version and replace all of the existing files inside of your installation folder where landing page is located.</p>
+						<p>Before replacing the files you should create a backup of your current db.sqlite3 database file which is located inside the /includes folder. After you update the landing page files, copy your backup file db.sqlite3 back inside the /include folder to avoid any data loss.</p>
+						<p class="margin-top-m documentation-note"><strong>IMPORTANT:</strong> Create a <strong>backup</strong> of your current <strong>db.sqlite3</strong> file which is located inside <strong>/includes</strong> folder to avoid any loss of your existing data.</p>
+						<p>You can find more information about updating your landing page on <a href="https://www.marketing-rhino.com/articles/how-to-update-your-landing-page/" target="_blank" rel="nofollow">this url</a>.
+					</div>					
+				</div>	
+				<hr>				
+				<div id="r-3" class="row">
+					<div class="col-sm-12">
+						<h2>Accessing the admin panel</h2>						
+						<p>After you have uploaded the landing page files to your hosting server, you can access the admin panel. Admin panel dashboard can be accessed by navigating to the <strong>admin subfolder</strong> appended to your domain name.</p>
+						<p><strong>EXAMPLE:</strong> If your domain name is called mydomain.com, then the admin dashboard would be accessed by entering the following URL: <strong>mydomain.com/admin/</strong></p>
+						<p>You can find more information about accessing the admin dashboard on <a href="https://www.marketing-rhino.com/articles/how-to-access-admin-dashboard/" target="_blank" rel="nofollow">this url</a>.
+					</div>					
+				</div>
+				<hr>
+				<div id="r-4" class="row">
+					<div class="col-sm-12"><h2>First Login</h2>		
+						<p>For your first dasboard access, you can login using the default admin credentials which are showed on the log-in form. After you log-in using the default admin details, you will be re-directed to change the default admin username and password. Please make sure to use a safe password which only you have access to.</p>	
+						<p>Upon changing the admin username and password, you will be re-directed back to the login form where you can login using the new admin details which you just entered.</p>
+					</div>
+				</div>				
+				<hr>
+				<div id="r-7" class="row">
+					<div class="col-sm-12"><h2>How to get support</h2>
+					<p>We are offering free installation support for all of our landing pages via our Support Forums or via Skype</p>
+					<p><strong>Request Support:</strong> <a href="https://www.marketing-rhino.com/log-a-support-ticket/" rel="nofollow">Open a support ticket</a></p>
+					<p><strong>Skype Support:</strong> counter.mind</p>			
+					</div>
+				</div>
+			</div>
+			</div>
+		<!-- Javacript Files -->    
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			 $('.scroll-me').bind("click", function(e) {
+				var target = $(this).attr("href"); // Get the target element
+				var scrollToPosition = $(target).offset().top; // Position to scroll to
+				$('html /* For FF & IE */,body /* For Chrome */').animate({
+					'scrollTop': scrollToPosition
+				}, 500, function(target) {
+					window.location.hash = target;
+				});
+				e.preventDefault();
+			});
+		</script>
+	</body>
+</html>
